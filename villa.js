@@ -4,6 +4,7 @@ var canvas = vp.getContext("2d");
 var nVacas = aleatorio(0, 14);
 var nPollos = aleatorio(0, 9);
 
+// KEYBOARD KEY CODE VALUES
 var teclas = {
     LEFT: 37,
     UP: 38,
@@ -11,6 +12,7 @@ var teclas = {
     DOWN: 40
 };
 
+//DETECT KEY PRESSED BY USER
 document.addEventListener("keyup", moveCerdo);
 
 var bg = {
@@ -88,7 +90,7 @@ function loadCerdo() {
     draw();
 }
 
-
+// DRAW ALL ELEMENTS ON CANVAS
 function draw(){
     if(bg.cargaOK) {
         canvas.drawImage(bg.image, 0, 0);    
@@ -108,6 +110,8 @@ function draw(){
     }
 }
 
+
+// MOVE ELEMENT "PIG" ON CANVAS
 function moveCerdo(evento){
     var movimiento = 10;
     switch(evento.keyCode) {
@@ -152,16 +156,16 @@ function moveCerdo(evento){
     }    
 }
 
+//General GET RANDOM FUNCTION
 function aleatorio(min, max){
     var resultado;
     resultado = Math.floor(Math.random()*(max - min +1))+min;
     return resultado;
 }
 
-/* GET RANDOM
-
+//BASIC GET RANDOM EXAMPLE
+/*
 var z;
-
 for(var i=0; i<10; i++){
     z = aleatorio(10,40);
     document.write(z+", ");
