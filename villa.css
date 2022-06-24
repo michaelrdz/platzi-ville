@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: #4b4b4b;
+}
+a:hover {
+    color: whitesmoke;
+}
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(imgs/bg_farm.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {    
+    width: 1012px;
+    height: 525px;
+    padding: 12px;
+    background: rgba(255,255,255,0.8);
+}
+.main-cont {
+    position: relative;
+    float: left;
+    width: 500px;
+}
+#title {
+    display: inline-flex;
+    padding: 12px;
+}
+#title h1 {
+    font-size: 24pt;
+    color: #98ca3c;
+    font-weight: 800;
+    margin: 20px;
+}
+#mainText p {
+    font-size: 18pt;
+    color: #4b4b4b;
+    font-weight: 800;
+    margin: 25px;
+}
+#keysGif {
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 12pt;
+    color: whitesmoke;
+    text-align: center;
+}
+
+footer h4 {
+    margin: 25px;
+}
